@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCup 2023 - školní e-sportový turnaj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="EduCupV2.html"><img src="educup-low-resolution-logo-color-on-transparent-background%20(2).png" alt="EduCup 2023"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="uvod.html">Úvod</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="prihlaseni.html">Přihlášení</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <h2 style="padding-top: 25px">Vítejte na EduCup 2023!</h2>
+        <p>Těšíme se, že se budeme moci setkat na našem školním e-sportovém turnaji. Akce se uskuteční v domácím prostředí jednotlivých hráčů dne 20. května 2023. Připravujeme pro vás bohatý program a těšíme se na vaši účast!</p>
+    </section>
+    <br>
+    <section class="schedule">
+        <h2>Program</h2>
+        <p>Zde je hrubý přehled toho, co vás na EduCup 2023 čeká:</p>
+        <table>
+            <tr>
+                <th>Čas</th>
+                <th>Program</th>
+            </tr>
+            <tr>
+                <td>8:00</td>
+                <td>Registrace a rozlosování týmů</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Zahájení turnaje</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Přestávka na oběd</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>Pokračování turnaje</td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td>Slavnostní vyhlášení výsledků</td>
+            </tr>
+        </table>
+    </section>
+    <br>
+
+    <br><br>
+    <section class="games">
+        <h2>Hry</h2>
+        <p>Na EduCup 2023 se bude hrát tato hra:</p>
+        <ul>
+            <li>Counter-Strike: Global Offensive</li>
+        </ul>
+    </section>
+    <br><br>
+    <section class="register">
+        <h2>Přihlášení</h2>
+        <p>Pokud chcete s týmem soutěžit v EduCup 2023, vyplňte prosím přihlášku:</p>
+        <form action="https://formsubmit.co/educupreg@gmail.com" method="post">
+            <label for="team-name">Jméno týmu:</label>
+            <input type="text" id="team-name" name="team-name" required>
+            <label for="game-select">Vyberte hru:</label>
+            <select id="game-select" name="game-select" required>
+                <option value="csgo">Counter-Strike: Global Offensive</option>
+            </select>
+            <label for="team-members">Seznam členů týmu (max. 5):</label>
+            <textarea id="team-members" name="team-members" rows="5" required></textarea>
+            <input type="submit" value="Odeslat přihlášku">
+        </form>
+        <script>
+            function submit(e){
+                e.preventDefault();
+            }
+        </script>
+
+    </section>
+<br>
+    <br>
+
+        <h2>Živý stream</h2>
+        <p>Sledujte naši akci v přímém přenosu na Twitchi:</p>
+        <!-- Add a placeholder for the Twitch embed -->
+    <section class="live-stream">
+        <div id="twitch-embed"></div>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+        <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+                channel: "OhnePixel"
+            });
+        </script>
+    </section>
+    <iframe
+            src="https://player.twitch.tv/?channel=ohnePixel&parent=https://enty3.github.io/EduCup-website/EduCupV2.html&muted=true"
+            height="720"
+            width="1280"
+            allowfullscreen>
+    </iframe>
+
+
+</main>
+<footer>
+    <p>&copy; EduCup 2023</p>
+    <ul>
+        <li><a href="#">O nás</a></li>
+        <li><a href="#">Podmínky účasti</a></li>
+        <li><a href="#">Ochrana osobních údajů</a></li>
+    </ul>
+</footer>
+
